@@ -1,0 +1,13 @@
+<nav>
+  <ul>
+    <li><a routerLink="/auth">auth</a></li>
+    <li><a routerLink="/register">register</a></li>
+    <li><a routerLink="/trees">trees</a></li>
+    <li><a routerLink="/user">profil</a></li>
+    <li><a routerLink="/user/history">user history</a></li>
+  </ul>
+  <ul *ngIf="user.role === 'admin'">
+    <li><a routerLink="/trees/create">create tree</a></li>
+    <li><a routerLink="/histories">historique des users</a></li>
+  </ul>
+</nav>

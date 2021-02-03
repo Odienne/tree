@@ -1,0 +1,19 @@
+<form [formGroup]="creationForm" (ngSubmit)="onSubmit()">
+
+  <div>
+    <label for="name">
+      name
+    </label>
+    <input id="name" type="text" formControlName="name">
+  </div>
+
+  <div>
+    <label for="address">
+      price
+    </label>
+    <input id="address" type="number" formControlName="price">
+  </div>
+
+  <button class="button" type="submit">Ajouter</button>
+
+</form>

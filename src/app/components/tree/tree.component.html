@@ -1,0 +1,11 @@
+<div *ngIf="tree">
+  <p>{{tree.name}}</p>
+  <p>{{tree.price}}</p>
+
+  <button><a routerLink="/trees/{{tree.tree_id}}/donate">Make donation</a></button>
+
+  <div *ngIf="user.role === 'admin'">
+    <button (click)="deleteTree()">Delete tree</button>
+    <button (click)="editTree()">Edit tree</button>
+  </div>
+</div>

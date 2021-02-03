@@ -1,0 +1,14 @@
+<div>
+  <ul>
+    <li *ngFor="let tree of trees">
+      <a routerLink="/trees/{{tree.tree_id}}">
+        {{tree.name}}
+        {{tree.price}}
+      </a>
+    </li>
+  </ul>
+
+
+  <button *ngIf="user.role === 'admin'"><a routerLink="/trees/create">add tree</a></button>
+
+</div>
